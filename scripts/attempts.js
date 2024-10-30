@@ -21,6 +21,7 @@ function reduceAttempts() {
 cancelBtn.addEventListener("click", () => {
     reduceAttempts();
     if (count < 1) {
+        console.log("fail");
         form.action = "fail.html";
     }
 });
