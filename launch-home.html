@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Security System</title>
+    <link rel="stylesheet" href="launch-code.css">
+</head>
+
+<body>
+    <main>
+        <div class="start">
+            <p class="welcome">* Launch Security System *</p>
+            <button id="status">Check Status</button>
+            <button id="cancel">Cancel Strike</button>
+            <div class="cancel-form-pop">
+                <form id=login action="cancel.html">
+                    <h1>Authorized Users ONLY!</h1>
+                    <label>Username:</label>
+                    <input type="text" id="username" name="username" pattern="hicks.daniel" required>
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password" pattern="c0nF!dENtI4L" required>
+                    <input type="submit" id="login-btn" value="Login">
+                </form>
+            </div>
+            <div class="check-form-pop">
+                <form id=login action="map.html">
+                    <h1>Authorized Users ONLY!</h1>
+                    <label>Username:</label>
+                    <input type="text" id="username" name="username" pattern="hicks.daniel" required>
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password" pattern="c0nF!dENtI4L" required>
+                    <input type="submit" id="login-btn" value="Login">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>

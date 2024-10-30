@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+
+:root {
+    --background: #000;
+    --text: #47E755;
+    --font: "Fragment Mono", monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    color: var(--text);
+    margin: .5rem;
+    padding: 1rem;
+    font-family: var(--font);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    background: var(--text);
+    border: none;
+    padding: 16px 20px;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+.cancel-form-pop,
+.check-form-pop {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 35%;
+    border: .5rem solid var(--text);
+    z-index: 9;
+}
+
+#login {
+    max-width: 400px;
+    padding: 10px;
+    background: var(--background);
+}
+
+#login input[type=text],
+#login input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: var(--background);
+    color: var(--text);
+}
+
+#login input[type=submit] {
+    background: var(--text);
+    padding: 16px 20px;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 80%;
+}
+
+.cancel-strike {
+    padding-top: 1rem;
+}
+
+#cancel-code input[type=password] {
+    background: var(--background);
+    border: 1px solid var(--text);
+    color: var(--text);
+}
+
+#cancel-code input[type=submit] {
+    background: var(--text);
+    padding: 16px 20px;
+    font-size: 1rem;
+    border: none;
+    width: 40%;
+    margin: 1rem;
+}
