@@ -19,12 +19,23 @@ body {
     text-align: center;
 }
 
-button {
+.welcome {
+    font-size: 1.5rem;
+}
+
+button,
+a {
     background: var(--text);
     border: none;
     padding: 16px 20px;
     font-size: 1rem;
     margin: .5rem;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--background);
 }
 
 .cancel-form-pop,
@@ -41,6 +52,7 @@ button {
     max-width: 400px;
     padding: 10px;
     background: var(--background);
+    font-family: var(--font);
 }
 
 #login input[type=text],
@@ -51,6 +63,7 @@ button {
     border: none;
     background: var(--background);
     color: var(--text);
+    font-family: var(--font);
 }
 
 #login input[type=submit] {
@@ -60,27 +73,37 @@ button {
     border: none;
     width: 100%;
     margin-bottom: 10px;
+    font-family: var(--font);
 }
 
 img {
-    width: 80%;
+    width: 70%;
 }
 
 .cancel-strike {
     padding-top: 1rem;
 }
 
-#cancel-code input[type=password] {
+#cancel-code input[type=text] {
     background: var(--background);
     border: 1px solid var(--text);
     color: var(--text);
+    margin: 1rem;
+    padding: 16px 20px;
+    font-family: var(--font);
+    font-size: 1.5rem;
 }
 
 #cancel-code input[type=submit] {
     background: var(--text);
     padding: 16px 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font);
     border: none;
-    width: 40%;
-    margin: 1rem;
+    width: 50%;
+    margin: 2rem;
+}
+
+.success {
+    font-size: 1.5rem;
 }
