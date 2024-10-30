@@ -5,10 +5,12 @@ var count = 3;
 const codeInput = document.querySelector("#code");
 const code = "14IFW800R127985";
 
+const form = document.getElementById("cancel-code");
+
 function reduceAttempts() {
     if (count >= 1) {
         if (codeInput.value == code) {
-            document.getElementById("cancel-code").action = "success.html";
+            form.action = "success.html";
         } else {
             count -= 1;
             att.innerHTML = count;
@@ -19,6 +21,6 @@ function reduceAttempts() {
 cancelBtn.addEventListener("click", () => {
     reduceAttempts();
     if (count < 1) {
-        document.getElementById("cancel-code").action = "fail.html";
+        form.action = "fail.html";
     }
 });
