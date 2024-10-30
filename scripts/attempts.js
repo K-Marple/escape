@@ -3,7 +3,12 @@ const att = document.querySelector("#attempts");
 var count = 3;
 
 const codeInput = document.querySelector("#code");
-const code = "14IFW800R127985";
+const code = "14IFW800RJ127B5";
+
+function uppercase() {
+    codeInput.value = codeInput.value.toUpperCase();
+    console.log(codeInput.value);
+}
 
 const form = document.getElementById("cancel-code");
 
@@ -18,10 +23,13 @@ function reduceAttempts() {
     }
 }
 
-cancelBtn.addEventListener("click", () => {
-    reduceAttempts();
+function failure() {
     if (count < 1) {
-        console.log("fail");
         form.action = "fail.html";
     }
+}
+
+cancelBtn.addEventListener("click", () => {
+    reduceAttempts();
+    failure();
 });

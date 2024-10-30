@@ -84,6 +84,11 @@ img {
     padding-top: 1rem;
 }
 
+#attempts {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 #cancel-code input[type=text] {
     background: var(--background);
     border: 1px solid var(--text);
