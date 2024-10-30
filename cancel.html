@@ -13,15 +13,17 @@
         <p class="welcome">* Launch Security System *</p>
     </div>
     <div class="cancel-strike">
-        <p>The launch can only be cancelled by submitting the correct code. You have <span id="attemps"></span>
+        <p>The launch can only be cancelled by submitting the correct code. You have <span id="attempts">3</span>
             attempts.
         </p>
-        <form id="cancel-code" action="success.html">
+        <form id="cancel-code">
             <label>Enter 15 character code:</label>
-            <input type="text" id="code" pattern="14IFW800R127985" required>
+            <input type="text" id="code" pattern="14IFW800R127985">
             <input type="submit" id="cancel-btn" value="Cancel Strike">
         </form>
     </div>
+    <script src="scripts/attempts.js"></script>
+    <script src="scripts/form-popup.js"></script>
 </body>
 
 </html>
